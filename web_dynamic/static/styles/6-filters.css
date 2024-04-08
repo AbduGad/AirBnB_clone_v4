@@ -86,11 +86,12 @@ div:hover > .popover {
   padding: 2em 0 2em 3em;
 }
 
-.amenities .amenities_text {
-  display: flex;
+.amenities h4 {
+  width: 300px;
+  height: 20px;
   flex-wrap: break-word; /* Allow long words to break */
   overflow: hidden; /* Hide overflow */
   text-overflow: ellipsis; /* Show ellipsis for truncated content */
-  max-width: 240px;
+  /*max-width: 240px;*/
   height: auto;
 }
