@@ -59,6 +59,7 @@
   box-sizing: border-box;
   width: 100%;
   top: 100%;
+  height: auto;
   margin-top: 0;
 }
 
@@ -83,15 +84,18 @@ div:hover > .popover {
   padding: 0.2em;
 }
 .filters .amenities ul {
-  padding: 2em 0 2em 3em;
+  padding: 0em 0 0em 3em;
 }
 
 .amenities h4 {
   width: 300px;
-  height: 20px;
-  flex-wrap: break-word; /* Allow long words to break */
-  overflow: hidden; /* Hide overflow */
-  text-overflow: ellipsis; /* Show ellipsis for truncated content */
+  height: 100px;
+  display: block;
+  position: fixed; /* Allow long words to break */
+  white-space: nowrap;
+   /* Show ellipsis for truncated content */
   /*max-width: 240px;*/
-  height: auto;
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis;
 }
+
